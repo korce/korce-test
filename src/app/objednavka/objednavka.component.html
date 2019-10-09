@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-6 input">
+    <form>
+      <div class="form-group">
+        <label for="kontakt">Kontakt</label>
+        <input type="kontakt" class="form-control" id="kontakt">
+      </div>
+      <div class="form-group">
+        <label for="firma">Firma</label>
+        <input type="firma" class="form-control" id="firma">
+      </div>
+      <div class="form-group">
+        <label for="text">Podrobnosti</label>
+        <textarea class="form-control" id="text" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="OdeslatUdaje()">
+        Odeslat Údaje
+      </button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <img width="20%" class="img-fluid" src="./../../assets/img/telephone.png">
+    <p class="under">+420 361 486 256</p>
+  </div>
+</div>
