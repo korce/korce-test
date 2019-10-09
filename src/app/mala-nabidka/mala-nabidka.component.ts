@@ -13,7 +13,6 @@ export class MalaNabidkaComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.polozky.forEach(element => {console.log(element)})
   }
 
   changeType(polozka: string) {
