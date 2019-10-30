@@ -1,94 +1,96 @@
 <h1 style="text-align: center; padding-top: 5%;">Rychlá Nabídka</h1>
-<div class="row">
-  <div class="col-6">
-    <div class="row">
-      <div class="col container">
-        <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_testoviny - kopie.jpg">
-        <button type="button" class="btn btn-flat" (click)="changeType('alko')" onclick="this.blur();">
-          Těstoviny
-        </button>
-      </div>
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_antipasti.jpg">
-        <button type="button" class="btn btn-flat" (click)="changeType('ceskeJidlo')" onclick="this.blur();">
-          Antipasti
-        </button>
-      </div>
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_maso,ryby - kopie.jpg">
-        <button type="button" class="btn btn-flat" (click)="changeType('croissanty')" onclick="this.blur();">
-          Maso,Ryby
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_kanapkybezmasa.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('nealko')" onclick="this.blur();">
-          Kanapky bezmasé
-        </button>
-      </div>
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_sendvice, croissanty - kopie.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('polevky')" onclick="this.blur();">
-          Sendviče
-        </button>
-      </div>
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_salaty.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('sladke')" onclick="this.blur();">
-          Saláty
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_maso,ryby - kopie.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('spagety')" onclick="this.blur();">
-          Maso, ryby
-        </button>
-      </div>
-      <div class="col container">
-          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_kanapkysmasem.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('steaky')" onclick="this.blur();">
-          Kanapky s masem
-        </button>
-      </div>
-      <div class="col container">
+<div>
+  <div class="row">
+    <div class="col-6">
+      <div class="row toppad">
+        <div class="col container">
           <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_testoviny - kopie.jpg">
-        <button type="button" class="btn btn-square" (click)="changeType('vegan')" onclick="this.blur();">
-          Těstoviny
-        </button>
+          <button type="button" class="btn btn-flat" (click)="changeType('alko')" onclick="this.blur();">
+            Těstoviny
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_antipasti.jpg">
+          <button type="button" class="btn btn-flat" (click)="changeType('ceskeJidlo')" onclick="this.blur();">
+            Antipasti
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_maso,ryby - kopie.jpg">
+          <button type="button" class="btn btn-flat" (click)="changeType('croissanty')" onclick="this.blur();">
+            Maso,Ryby
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_kanapkybezmasa.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('nealko')" onclick="this.blur();">
+            Kanapky bezmasé
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_sendvice, croissanty - kopie.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('polevky')" onclick="this.blur();">
+            Sendviče
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_salaty.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('sladke')" onclick="this.blur();">
+            Saláty
+          </button>
+        </div>
+      </div>
+      <div class="row botpad">
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_maso,ryby - kopie.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('spagety')" onclick="this.blur();">
+            Maso, ryby
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_kanapkysmasem.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('steaky')" onclick="this.blur();">
+            Kanapky s masem
+          </button>
+        </div>
+        <div class="col container">
+          <img class="img-fluid" src="assets/img/fotkyNaWebovky/RN_testoviny - kopie.jpg">
+          <button type="button" class="btn btn-square" (click)="changeType('vegan')" onclick="this.blur();">
+            Těstoviny
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-6">
-    <div *ngIf="polozky[0]">
-      <app-alko></app-alko>
-    </div>
-    <div *ngIf="polozky[1]">
-      <app-ceske-jidlo></app-ceske-jidlo>
-    </div>
-    <div *ngIf="polozky[2]">
-      <app-croissanty></app-croissanty>
-    </div>
-    <div *ngIf="polozky[3]">
-      <app-nealko></app-nealko>
-    </div>
-    <div *ngIf="polozky[4]">
-      <app-polevky></app-polevky>
-    </div>
-    <div *ngIf="polozky[5]">
-      <app-sladke></app-sladke>
-    </div>
-    <div *ngIf="polozky[6]">
-      <app-spagety></app-spagety>
-    </div>
-    <div *ngIf="polozky[7]">
-      <app-steaky></app-steaky>
-    </div>
-    <div *ngIf="polozky[8]">
-      <app-vegan></app-vegan>
+    <div class="col-6">
+      <div *ngIf="polozky[0]">
+        <app-alko></app-alko>
+      </div>
+      <div *ngIf="polozky[1]">
+        <app-ceske-jidlo></app-ceske-jidlo>
+      </div>
+      <div *ngIf="polozky[2]">
+        <app-croissanty></app-croissanty>
+      </div>
+      <div *ngIf="polozky[3]">
+        <app-nealko></app-nealko>
+      </div>
+      <div *ngIf="polozky[4]">
+        <app-polevky></app-polevky>
+      </div>
+      <div *ngIf="polozky[5]">
+        <app-sladke></app-sladke>
+      </div>
+      <div *ngIf="polozky[6]">
+        <app-spagety></app-spagety>
+      </div>
+      <div *ngIf="polozky[7]">
+        <app-steaky></app-steaky>
+      </div>
+      <div *ngIf="polozky[8]">
+        <app-vegan></app-vegan>
+      </div>
     </div>
   </div>
 </div>
