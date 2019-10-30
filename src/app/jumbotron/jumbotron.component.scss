@@ -2,10 +2,10 @@
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  line-height: 50px;
   font-weight: 500;
-  overflow: hidden;
 }
 
 .half {
@@ -14,5 +14,8 @@
   background-position: center;
   background-attachment:fixed;
   box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.75  );
-  overflow: hidden;
+}
+
+p {
+  margin-block-end: 0%;
 }

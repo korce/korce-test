@@ -12,10 +12,6 @@ p {
   margin-bottom: 5%;
 }
 
-.over {
-  overflow: hidden;
-}
-
 img {
   max-width: 50%;
   display: block;
@@ -29,4 +25,7 @@ img {
 .left {
   text-align: left;
   padding: 0%;
+}
+.over {
+  overflow: hidden;
 }

@@ -6,6 +6,8 @@
 .container img {
   width: 100%;
   height: auto;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  
 }
 .btn {
     outline: none;
@@ -26,4 +28,8 @@
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.row {
+  margin: 0px;
 }
