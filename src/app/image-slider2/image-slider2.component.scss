@@ -5,3 +5,9 @@ h1 {
 [class*="col-"] {
   padding: 1rem;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30%;
+    height: 30%;
+  background-size: 100%, 100%;
+}
