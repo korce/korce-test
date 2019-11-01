@@ -3,11 +3,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 html, body {
-  background: url(./assets/img/background.jpg) ; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(255, 254, 250);
   scroll-behavior: smooth;
   max-width: 100%;
 }
