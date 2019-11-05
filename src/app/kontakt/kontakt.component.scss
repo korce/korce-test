@@ -6,15 +6,26 @@
 .header {
   text-align: center;
   padding-top: 5%;
+  padding-bottom: 4%;
 }
 
 .small {
   margin-top: 5%;
   margin-bottom: 0px;
+  text-align: center;
   font-size: 70%;
   color: white;
 }
 
 .black {
   background-color: gray;
+}
+
+.main {
+  font-size: 2vw;
+}
+
+.info {
+  font-size: 1.5vw;
+  line-height: 3vw;
 }

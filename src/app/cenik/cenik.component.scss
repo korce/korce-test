@@ -9,13 +9,9 @@ p {
 }
 .tabulka {
   padding-top: 5%;
+  width: 75%;
 }
 
-img {
-  max-width: 20%;
-  display: block;
-  margin: auto;
-}
 .komplet {
   padding-top: 1vw;
   text-align: center;
@@ -25,6 +21,18 @@ img {
   text-align: left;
   padding: 0%;
 }
+.right {
+  text-align: right;
+  padding: 0%;
+}
 .over {
   overflow: hidden;
+}
+
+.leftBorder {
+ text-align: right;
+}
+
+.rightBorder {
+text-align: left;
 }
