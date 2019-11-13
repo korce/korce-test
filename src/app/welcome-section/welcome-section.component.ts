@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-welcome-section',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeSectionComponent implements OnInit {
 
+  @Input()
+  isMobile: boolean;
+  
   constructor() { }
 
   ngOnInit() {

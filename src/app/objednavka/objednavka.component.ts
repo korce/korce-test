@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-objednavka',
@@ -11,6 +11,9 @@ export class ObjednavkaComponent implements OnInit {
   firma: string;
   text: string;
 
+  @Input()
+  isMobile: boolean;
+
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +21,9 @@ export class ObjednavkaComponent implements OnInit {
 
   OdeslatUdaje() {
     console.log('odeslano');
+    console.log(this.kontakt);
+    console.log(this.firma);
+    console.log(this.text);
   }
 
 }

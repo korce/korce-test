@@ -1,0 +1,14 @@
+[class*="col-"] {
+    padding: 1rem;
+}
+.top {
+    padding-top: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30%;
+    height: 30%;
+  background-size: 100%, 100%;
+    color: black;
+}

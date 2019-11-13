@@ -1,31 +1,49 @@
-<h1 class="text-center" style="padding-top: 5%;font-size: 5vw;">Koncept</h1>
-<div class="row">
-  <div class="col">
-    <img class="img-fluid half" src="assets/img/email.png" alt="">
-  </div>
-  <div class="col">
-    <img class="img-fluid half" src="assets/img/offer.png" alt="">
-  </div>
-  <div class="col">
-    <img class="img-fluid half" src="assets/img/delivery.png" alt="">
-  </div>
-</div>
-<div class="row" style="padding-bottom: 5%;">
+<h1 class="text-center" style="padding-top: 5%; font-size: 7vw;">Koncept</h1>
+<div *ngIf="!isMobile" class="row" style="padding-bottom: 5%">
   <div class="col-4">
+    <img class="img-fluid" src="assets/img/email.png" alt="">
     <h3>Kontaktujte nás</h3>
-    <p class="text">Máte jasnou představu nebo chcete poradit? Napište nám email nebo zavolejte, rádi Vám pomůžeme zrealizovat vaši
+    <p class="text">Máte jasnou představu nebo chcete poradit? Napište nám email nebo zavolejte, rádi Vám pomůžeme
+      zrealizovat vaši
       vysněnou akci.
     </p>
   </div>
   <div class="col-4">
+    <img class="img-fluid" src="assets/img/offer.png" alt="">
     <h3>Nabídneme</h3>
-    <p class="text">Nabídneme Vám čerstvou italskou a středomořskou kuchyni v podobě finger food, antipasti nebo hlavních chodů. Pro
+    <p class="text">Nabídneme Vám čerstvou italskou a středomořskou kuchyni v podobě finger food, antipasti nebo
+      hlavních chodů. Pro
       rychlejší a easy výběr máme předem připravené balíčky, které rádi dle vašeho přání poupravíme.
     </p>
   </div>
   <div class="col-4">
+    <img class="img-fluid" src="assets/img/delivery.png" alt="">
     <h3>Doručíme</h3>
     <p class="text">Catering Vám společně s potřebných inventářem dovezeme na Vámi určené místo.
+    </p>
+  </div>
+</div>
+<div *ngIf="isMobile" class="row" style="padding-bottom: 5%">
+  <div class="col-12">
+    <img class="img-fluid" src="assets/img/email.png" alt="">
+    <h3 style="font-size: 6vw;">Kontaktujte nás</h3>
+    <p class="textMobile">Máte jasnou představu nebo chcete poradit? Napište nám email nebo zavolejte, rádi Vám pomůžeme
+      zrealizovat vaši
+      vysněnou akci.
+    </p>
+  </div>
+  <div class="col-12">
+    <img class="img-fluid" src="assets/img/offer.png" alt="">
+    <h3 style="font-size: 6vw;">Nabídneme</h3>
+    <p class="textMobile">Nabídneme Vám čerstvou italskou a středomořskou kuchyni v podobě finger food, antipasti nebo
+      hlavních chodů. Pro
+      rychlejší a easy výběr máme předem připravené balíčky, které rádi dle vašeho přání poupravíme.
+    </p>
+  </div>
+  <div class="col-12">
+    <img class="img-fluid" src="assets/img/delivery.png" alt="">
+    <h3 style="font-size: 6vw;">Doručíme</h3>
+    <p class="textMobile">Catering Vám společně s potřebných inventářem dovezeme na Vámi určené místo.
     </p>
   </div>
 </div>

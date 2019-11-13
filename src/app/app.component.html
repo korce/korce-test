@@ -1,16 +1,21 @@
-
 <app-logo id="domu"></app-logo>
-
-<app-jumbotron></app-jumbotron>
-
+<app-jumbotron [isMobile]="isMobile"></app-jumbotron>
 <app-navbar></app-navbar>
-<!--<app-fotky id="fotky"></app-fotky>!-->
-
-<app-image-slider id="fotky"></app-image-slider>
-<app-image-slider2></app-image-slider2>
-
-<app-welcome-section></app-welcome-section>
-<app-mala-nabidka></app-mala-nabidka>
-<app-koncept id="koncept"></app-koncept>
-<app-objednavka></app-objednavka>
-<app-kontakt id="kontakt" class="footer"></app-kontakt>
+<div *ngIf="isMobile">
+  <app-image-slider-mobile id="fotky"></app-image-slider-mobile>
+  <app-image-slider2-mobile></app-image-slider2-mobile>
+</div>
+<div *ngIf="!isMobile">
+  <app-image-slider id="fotky"></app-image-slider>
+  <app-image-slider2></app-image-slider2>
+</div>
+<app-welcome-section  [isMobile]="isMobile"></app-welcome-section>
+<div *ngIf="isMobile">
+  <app-mala-nabidka-mobile></app-mala-nabidka-mobile>
+</div>
+<div *ngIf="!isMobile">
+  <app-mala-nabidka></app-mala-nabidka>
+</div>
+<app-koncept id="koncept" [isMobile]="isMobile"></app-koncept>
+<app-objednavka  [isMobile]="isMobile"></app-objednavka>
+<app-kontakt  [isMobile]="isMobile" id="kontakt" class="footer"></app-kontakt>

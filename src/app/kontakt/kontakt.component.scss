@@ -18,14 +18,46 @@
 }
 
 .black {
-  background-color: gray;
+  background-color: #adadad;
 }
 
 .main {
   font-size: 2vw;
 }
 
+.mainMobile {
+  font-size: 3vw;
+}
+
 .info {
   font-size: 1.5vw;
   line-height: 3vw;
+}
+
+.infoMobile {
+  font-size: 2vw;
+  line-height: 4vw;
+}
+
+.noPadding {
+  padding-left: 10vw;
+  margin: 0px;
+  font-size: 1.5vw;
+}
+
+.padding {
+  padding-bottom: 3vw;
+}
+
+.social {
+  font-size: 6vw;
+  padding: 0.4vw;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram {
+  color: #517fa4
 }

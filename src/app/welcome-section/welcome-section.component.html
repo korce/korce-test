@@ -7,14 +7,14 @@
     </div>
     <hr>
     <div class="col-12">
-      <p class="text">
+      <p [ngClass]="isMobile ? 'textMobile' : 'text'">
         Zakládáme si na jednoduchosti, autentičnosti, čerstvosti a kvalitě.
         Nabízíme široký sortiment čerstvých surovin za velmi přijatelné ceny. Finger food, salátky, antipasti nebo radši
         teplé hlavní chody? Rádi Vám sestavíme catering na míru.
 
 
       </p>
-      <p class="text">
+      <p [ngClass]="isMobile ? 'textMobile' : 'text'">
         Kromě jídla a nápojů dovezeme na Vámi určené místo veškerý potřebný inventář.
       </p>
     </div>

@@ -5,14 +5,25 @@ h3 {
 p {
   text-align: center;
 }
-.half {
+.col-4 img {
   max-width: 200px;
   max-height: 200px;
-  width: 50%;
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.col-12 img {
+  max-width: 200px;
+  max-height: 200px;
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-12  p {
+  padding-right: 20vw;
+  padding-left: 20vw;
 }
 .col {
   padding-top: 2%;
@@ -33,6 +44,9 @@ p {
 }
 .text {
   font-size: 1.5vw;
+}
+.textMobile {
+  font-size: 3vw;
 }
 h3 {
   font-size: 3vw;

@@ -1,0 +1,70 @@
+<h1 style="text-align: center; padding-top: 5%;font-size: 5vw;">Rychlá Nabídka</h1>
+<div>
+  <button type="button" class="btn btn-warning test" (click)="changeType('alko')" onclick="this.blur();">
+    Sladká Snídaně
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('ceskeJidlo')" onclick="this.blur();">
+    Private Party
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('croissanty')" onclick="this.blur();">
+    Slaná Snídaně
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('nealko')" onclick="this.blur();">
+    Easy Banket
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('polevky')" onclick="this.blur();">
+    Coffee Break
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('sladke')" onclick="this.blur();">
+    Bíle Víno
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('spagety')" onclick="this.blur();">
+    Červené Víno
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('steaky')" onclick="this.blur();">
+    Nápoje
+  </button>
+  <button type="button" class="btn btn-warning test" (click)="changeType('vegan')" onclick="this.blur();">
+    Private Party
+  </button>
+</div>
+<div *ngIf="polozky[0]">
+  <app-alko-mobile></app-alko-mobile>
+</div>
+<div *ngIf="polozky[1]">
+  <app-ceske-jidlo-mobile></app-ceske-jidlo-mobile>
+</div>
+<div *ngIf="polozky[2]">
+  <app-croissanty-mobile></app-croissanty-mobile>
+</div>
+<div *ngIf="polozky[3]">
+  <app-nealko-mobile></app-nealko-mobile>
+</div>
+<div *ngIf="polozky[4]">
+  <app-polevky-mobile></app-polevky-mobile>
+</div>
+<div *ngIf="polozky[5]">
+  <app-sladke-mobile></app-sladke-mobile>
+</div>
+<div *ngIf="polozky[6]">
+  <app-spagety-mobile></app-spagety-mobile>
+</div>
+<div *ngIf="polozky[7]">
+  <app-steaky-mobile></app-steaky-mobile>
+</div>
+<div *ngIf="polozky[8]">
+  <app-vegan-mobile></app-vegan-mobile>
+</div>
+
+
+<h1 style="padding: 1vw; text-align: center; font-size: 5vw;">Easy catering od Pastaře to je ...</h1>
+<div style="padding-left: 3vw;">
+  <p>... autentická středomořská kuchyně</p>
+  <p>... domácí pasta, čerstvé suroviny</p>
+  <p>... rodinná atmosféra</p>
+  <p>... obrovské nasazení a flexibilita</p>
+  <p>... více než 5 let zkušeností v gastronomii</p>
+</div>
+<a href="assets/pdf/nabidka.pdf" target="_blank"><img class="img-fluid nabidka" src="assets/img/pdf.png">
+  <p class="komplet">Kompletní nabídka</p>
+</a>

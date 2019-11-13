@@ -1,0 +1,29 @@
+.over {
+    overflow: hidden;
+}
+.height {
+    height: 50%;
+}
+.first {
+    text-align: right;
+}
+p{
+    font-size: 1.5vw;
+    line-height: 4vw;
+    text-align: center;
+    margin: 0%;
+}
+.bgimg {
+    background-image: url(./../../../assets/img/fotkyNaWebovky/jidlo_31.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.75);
+    width: 100%;
+    height: 50%;
+  }
+
+  .text {
+      font-size: 3vw;
+      padding-top: 4vw;
+  }

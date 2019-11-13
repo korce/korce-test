@@ -1,34 +1,38 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <div class="black">
   <h1 class="header" style="padding-top: 5%;font-size: 5vw">Kontakt</h1>
   <footer>
     <div class="container-fluid padding">
       <div class="row text-center">
         <div class="col-6">
-          <p class="main">Telefon</p>
-          <p class="main">Email</p>
-          <p class="main">Adresa Sídla</p>
+          <p [ngClass]="isMobile ? 'mainMobile' : 'main'">Telefon:</p>
+          <p [ngClass]="isMobile ? 'mainMobile' : 'main'">Email:</p>
+          <p [ngClass]="isMobile ? 'mainMobile' : 'main'">Adresa Sídla:</p>
         </div>
         <div class="col-6">
-          <p class="info">+420 602 787 222</p>
-          <p class="info">easycatering@pastar.cz</p>
-          <p class="info">Restaurace Pastař, Malostranské nábřeží 1, Malá Strana, 118 00 Praha 1</p>
+          <p [ngClass]="isMobile ? 'infoMobile' : 'info'">+420 602 787 222</p>
+          <p [ngClass]="isMobile ? 'infoMobile' : 'info'">easycateringpastar@gmail.cz</p>
+          <p [ngClass]="isMobile ? 'infoMobile' : 'info'">Restaurace Pastař, Malostranské nábřeží 1</p>
+          <p [ngClass]="isMobile ? 'infoMobile' : 'info'">Malá Strana, 118 00 Praha 1</p>
         </div>
       </div>
-      <p class="small">Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-        Různé legální věci okolo copyrightu a dalších věciček.
-      </p>
+    </div>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-6 my-auto">
+          <p class="noPadding" style="text-align: left;">
+            ©2019 <span style="color: orange; font-weight: bold;">Pastař s.r.o.</span>, Všechna práva
+            vyhrazena.
+          </p>
+        </div>
+        <div class="col-6 my-auto">
+          <p>
+            <a href="https://www.facebook.com/easycateringodpastare/" class="social" target="_blank"><i class="fab fa-facebook social"></i></a>
+            <a href="https://www.instagram.com/easycateringodpastare/" class="social" target="_blank"><i class="fab fa-instagram social"></i></a>
+            <p>
+            </p>
+        </div>
+      </div>
     </div>
   </footer>
 </div>

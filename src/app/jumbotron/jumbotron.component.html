@@ -1,7 +1,7 @@
 <div class="container-fluid half">
-  <p class="text">
+  <p [ngClass]="isMobile ? 'textMobile' : 'text'">
     Chcete kouzlo Itálie přenést i na Vaši rodinnou oslavu, firemní poradu, obchodní jednání či posezení s přáteli? Easy
     catering od Pastaře Vám toto přání splní a bude to opravu easy!
   </p>
-  <p class="text" style="font-weight: 600;">Lehké občerstvení v podobě kanapek, sendvičů, italských antipasti či dezertů dodá Vaší akci šmrnc.</p>
+  <p [ngClass]="isMobile ? 'textMobile' : 'text'" style="font-weight: 600;">Lehké občerstvení v podobě kanapek, sendvičů, italských antipasti či dezertů dodá Vaší akci šmrnc.</p>
 </div>

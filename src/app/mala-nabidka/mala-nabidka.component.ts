@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-mala-nabidka',
@@ -7,13 +6,22 @@ import { element } from 'protractor';
   styleUrls: ['./mala-nabidka.component.scss']
 })
 export class MalaNabidkaComponent implements OnInit {
-  polozky: boolean[] = [true, false, false, false, false, false, false, false, false];
+  polozky: boolean[] = [
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ];
   active = 0;
 
   constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   changeType(polozka: string) {
     this.polozky[this.active] = false;

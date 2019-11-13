@@ -8,7 +8,14 @@
     text-align: right;
 }
 p{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+    line-height: 4vw;
     text-align: center;
     margin: 0%;
 }
+.bgimg {
+    background-image: url(./../../../assets/img/fotkyNaWebovky/jidlo_44.jpg);
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.75);
+    height: 100%;
+  }

@@ -2,15 +2,38 @@
   padding-left: 5%;
 }
 
-img {
+.nadpis {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.nadpisMobile {
+  text-align: center;
+  font-size: 4vw;
+}
+
+.image {
   max-width: 20%;
   display: block;
   margin: auto;
 }
+.imageMobile {
+  max-width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.underMobile {
+  text-align: center;
+  font-size: 4vw;
+  padding-bottom: 2vw;
+  padding-top: 10%;
+}
 
 .under {
   text-align: center;
-  font-size: 200%;
+  font-size: 3vw;
+  padding-bottom: 2vw;
   padding-top: 10%;
 }
 
