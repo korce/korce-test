@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-slider2-mobile.component.scss']
 })
 export class ImageSlider2MobileComponent implements OnInit {
-  path = './../../assets/img/fotkyNaWebovky/jidlo_';
+  path = 'assets/img/fotkyNaWebovky/jidlo_';
 
   originalImages: Array<string>;
   shuffledImages: Array<string>;
