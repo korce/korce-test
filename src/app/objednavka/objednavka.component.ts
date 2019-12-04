@@ -20,10 +20,6 @@ export class ObjednavkaComponent implements OnInit {
   }
 
   OdeslatUdaje() {
-    console.log('odeslano');
-    console.log(this.kontakt);
-    console.log(this.firma);
-    console.log(this.text);
   }
 
 }
