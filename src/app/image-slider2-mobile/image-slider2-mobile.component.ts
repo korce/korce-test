@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-slider2-mobile.component.scss']
 })
 export class ImageSlider2MobileComponent implements OnInit {
-  path = 'assets/img/fotkyNaWebovky/jidlo_';
+  path = 'assets/img/fotkyNaWebovky/akce_';
 
   originalImages: Array<string>;
   shuffledImages: Array<string>;
@@ -15,8 +15,8 @@ export class ImageSlider2MobileComponent implements OnInit {
 
   ngOnInit() {
     this.originalImages = new Array();
-    for (let i = 33; i < 60; i++) {
-      this.originalImages.push(this.path + i + '.jpg');
+    for (let i = 0; i < 9; i++) {
+      this.originalImages.push(this.path + i + '.jpeg');
     }
     this.shuffledImages = this.shuffle(this.originalImages);
   }

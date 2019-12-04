@@ -15,7 +15,7 @@ export class ImageSliderComponent implements OnInit {
 
   ngOnInit() {
     this.originalImages = new Array();
-    for (let i = 0; i < 33; i++) {
+    for (let i = 0; i < 60; i++) {
       if (i !== 6 && i !== 7 && i !== 8) {
         this.originalImages.push(this.path + i + '.jpg');
       }
