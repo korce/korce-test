@@ -1,35 +1,9 @@
-<h2 [ngClass]="isMobile ? 'nadpisMobile' : 'nadpis'">V případě zájmu využijte formulář nalevo nebo rovnou volejte na
-  telefonní číslo níže.
+<h2 style="padding-top: 5%;" [ngClass]="isMobile ? 'nadpisMobile' : 'nadpis'">V případě zájmu rovnou volejte na telefonní číslo níže.
 </h2>
-<div class="row">
-  <div class="col-6 input">
-    <form>
-      <div class="form-group">
-        <label for="kontakt">Kontakt
-          <input [(ngModel)]="kontakt" name="kontakt" type="kontakt" size="40" class="form-control" id="kontakt">
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="firma">Firma
-          <input [(ngModel)]="firma" name="firma" class="form-control" size="40" id="firma">
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="text">Podrobnosti
-          <textarea [(ngModel)]="text" name="text" class="form-control" id="text" cols="42" rows="3"></textarea>
-        </label>
-      </div>
-      <button type="button" class="btn btn-secondary" (click)="OdeslatUdaje()">
-        Odeslat Údaje
-      </button>
-    </form>
-  </div>
-  <div class="col-6 right my-auto">
-    <div>
-      <img class="img-fluid" [ngClass]="isMobile ? 'imageMobile' : 'image'" src="assets/img/telephone.png">
-      <a href="tel:+420-602-787-222">
-        <p [ngClass]="isMobile ? 'underMobile' : 'under'">+420 602 787 222</p>
-      </a>
-    </div>
-  </div>
+<div>
+  <img style="padding-top: 5%;" class="img-fluid" [ngClass]="isMobile ? 'imageMobile' : 'image'" src="assets/img/telephone.png">
+  <a href="tel:+420-602-787-222">
+    <p [ngClass]="isMobile ? 'underMobile' : 'under'">+420 602 787 222</p>
+  </a>
 </div>
+a
